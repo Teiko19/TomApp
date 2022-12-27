@@ -3,9 +3,9 @@ import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.scss'
 import 'bootstrap/dist/css/bootstrap.css'
-import { Header } from '../components/header/header'
+import { NavBar } from '../src/components/navBar/navBar'
 import { Inter } from '@next/font/google'
-import { Article } from '../components/Article/Article'
+import { Header } from '../src/components/Header/Header'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -15,9 +15,9 @@ export default function Home() {
       <Head>
         <title>TomApp</title>
       </Head>
-      <Header />
+      <NavBar />
       <main className={styles.main}>
-        <Article />
+        <Header />
       </main>
     </> 
   )
