@@ -3,7 +3,7 @@ import './navBar.module.scss'
 
 export const NavBar = () => {
   return (
-      <nav className="content navbar navbar-expand-lg navbar-light bg-light">
+      <nav className="navBar navbar navbar-expand-lg navbar-light bg-light">
         <div>
           <a className="navbar-brand" href="#">Home</a>
         </div>
