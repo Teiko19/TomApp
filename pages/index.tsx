@@ -5,7 +5,7 @@ import styles from '../styles/Home.module.scss'
 import 'bootstrap/dist/css/bootstrap.css'
 import { NavBar } from '../src/components/navBar/navBar'
 import { Inter } from '@next/font/google'
-import { Header } from '../src/components/Header/Header'
+import { CharacterList } from '../src/components/character-list/character-list'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -17,7 +17,7 @@ export default function Home() {
       </Head>
       <NavBar />
       <main className={styles.main}>
-        <Header />
+        <CharacterList />
       </main>
     </> 
   )
