@@ -1,5 +1,7 @@
+$base-color: black;
+
 .navBar_container {
-    background-color: black;
+    background-color: $base-color;
     display: flex;
     justify-content: space-between;
 }

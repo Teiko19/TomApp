@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 
 export const Character = ({ character }) => {
   return (
@@ -14,7 +15,11 @@ export const Character = ({ character }) => {
         </ul>
       </div>
       <div className="d-flex justify-content-center mb-1 mt-1">
-        <img src={character.image} className="img-responsive rounded-circle" alt="Responsive image"></img>
+        <Image  src={character.image} 
+                className="img-responsive rounded-circle" 
+                alt="Responsive image" 
+                width={250}
+                height={250}/>
       </div>
     </div>
   )
