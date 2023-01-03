@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
 import { API_CHARACTERS } from "../../api/constant";
-import 'bootstrap/dist/css/bootstrap.css'
 import { Character } from "./character";
 
 export const CharacterList = () => {
