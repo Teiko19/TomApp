@@ -1,9 +1,8 @@
 import React from 'react'
-import styles from './navBar.module.scss'
 
 export const NavBar = () => {
   return (
-      <nav className={`${styles.navBar_container} navbar navbar-expand-lg navbar-light bg-light d-flex justify-content-between`}>
+      <nav className={`navbar navbar-expand-lg navbar-light bg-light d-flex justify-content-between`}>
         <div>
           <a className="navbar-brand" href="#">Home</a>
         </div>

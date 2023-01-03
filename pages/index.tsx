@@ -1,6 +1,5 @@
 import React from 'react'
 import Head from 'next/head'
-import styles from '../styles/Home.module.scss'
 import { NavBar } from '../src/components/navBar/navBar'
 import { Inter } from '@next/font/google'
 import { CharacterList } from '../src/components/character-list/character-list'
@@ -14,7 +13,7 @@ export default function Home() {
         <title>TomApp</title>
       </Head>
       <NavBar />
-      <main className={styles.main}>
+      <main>
         <CharacterList />
       </main>
     </> 
