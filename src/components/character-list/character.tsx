@@ -4,7 +4,7 @@ import Image from "next/image";
 export const Character = ({ character }) => {
   return (
     <div className="border border-black rounded bg-black text-white">
-      <div className="">
+      <div>
         <p className="lead text-center"><u>{character.name}</u></p>
         <ul className="list-group">
           <li className="list-group-item"><p><b>Gender:</b> {character.gender} </p></li>

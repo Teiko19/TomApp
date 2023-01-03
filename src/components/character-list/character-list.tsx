@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { API_CHARACTERS } from "../../api/constant";
+import { API_CHARACTERS } from "../../constants/url";
 import { Character } from "./character";
 
 export const CharacterList = () => {
