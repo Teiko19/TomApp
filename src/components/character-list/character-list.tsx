@@ -4,7 +4,7 @@ import { Character } from "./character";
 
 export const CharacterList = () => {
 
-  const [characters, setCharacters] = useState([])
+  const [characters, setCharacters] = useState([]);
 
   useEffect(() => {
     const fetchData = async () => {
