@@ -3,6 +3,7 @@ import Head from 'next/head'
 import { NavBar } from '../src/components/navBar/navBar'
 import { Inter } from '@next/font/google'
 import { CharacterList } from '../src/components/character-list/character-list'
+import { Main } from '../src/components/main/main'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -12,10 +13,10 @@ export default function Home() {
       <Head>
         <title>TomApp</title>
       </Head>
-      <NavBar />
-      <main>
+      <Main className="mx-3 mt-3">
+        <NavBar />
         <CharacterList />
-      </main>
+      </Main>
     </> 
   )
 }
