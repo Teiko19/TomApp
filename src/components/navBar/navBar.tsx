@@ -23,8 +23,6 @@ export const NavBar = () => {
           </ul>
         </div>
       </nav>
-
-      <SearchCharacter />
     </div>
   )
 };
