@@ -12,9 +12,9 @@ export const SearchCharacter = ({ status, setStatus }) => {
       <label className="input-group-text">Options</label>
       <select className="form-select" value={status} onChange={handleStatus}>
         <option value="" selected className="text-center">Select status</option>
-        <option value="?status=alive" className="text-center">Alive</option>
-        <option value="?status=dead" className="text-center">Dead</option>
-        <option value="?status=unknown" className="text-center">Unknown</option>
+        <option value="alive" className="text-center">Alive</option>
+        <option value="dead" className="text-center">Dead</option>
+        <option value="unknown" className="text-center">Unknown</option>
       </select>
     </div>
   )

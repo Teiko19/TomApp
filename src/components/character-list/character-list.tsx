@@ -5,11 +5,13 @@ import queryString from 'query-string';
 
 export const CharacterList = ({ status }) => {
 
+  const parsed = queryString.parse
+
   const [characters, setCharacters] = useState([]);
 
   useEffect(() => {
     const fetchData = async () => {
-      const json = await fetch(API_CHARACTERS + status);
+      const json = await fetch(`${API_CHARACTERS}/?` + queryString.stringify({ status } , { skipEmptyString: true }));
       const data = await json.json();
       setCharacters(data.results);
     }
