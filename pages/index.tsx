@@ -1,10 +1,10 @@
-import React, { useState } from 'react'
-import Head from 'next/head'
-import { NavBar } from '../src/components/navBar/navBar'
-import { Inter } from '@next/font/google'
-import { CharacterList } from '../src/components/character-list/character-list'
-import { Layout } from '../src/components/main/main'
-import { SearchCharacter } from '../src/components/search/search'
+import React, { useState } from 'react';
+import Head from 'next/head';
+import { NavBar } from '../src/components/navBar/navBar';
+import { Inter } from '@next/font/google';
+import { CharacterList } from '../src/components/character-list/character-list';
+import { Layout } from '../src/components/Layout/Layout';
+import { SearchCharacter } from '../src/components/search/search';
 
 const inter = Inter({ subsets: ['latin'] })
 
