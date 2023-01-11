@@ -3,21 +3,20 @@ import { API_CHARACTERS } from "../../constants/url";
 import { Character } from "./character";
 import queryString from 'query-string';
 
-export const CharacterList = ({ status }) => {
-
-  const parsed = queryString.parse
+export const CharacterList = (filter) => {
 
   const [characters, setCharacters] = useState([]);
 
   useEffect(() => {
     const fetchData = async () => {
-      const json = await fetch(`${API_CHARACTERS}/?` + queryString.stringify({ status } , { skipEmptyString: true }));
+      console.log(filter);
+      const json = await fetch(`${API_CHARACTERS}/?` + queryString.stringify(filter, { skipEmptyString: true }));
       const data = await json.json();
       setCharacters(data.results);
     }
     fetchData()
       .catch(console.error);
-  }, [status]);
+  }, [filter]);
 
   return (
       <div className="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
