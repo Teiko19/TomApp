@@ -2,8 +2,9 @@ import React, { useEffect } from "react";
 
 export const SearchCharacter = ({ filters, setFilters }) => {
 
-  const handleEvent = (key, event) => {
-    return setFilters(...filters, key = event.target.value );
+  const handleEvent = (key , event) => {
+    console.log({ ...filters, [key]: event.target.value })
+    return setFilters({ ...filters, [key]: event.target.value });
   };
 
   return (
