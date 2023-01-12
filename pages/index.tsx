@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import Head from 'next/head';
 import { NavBar } from '../src/components/navBar/navBar';
 import { Inter } from '@next/font/google';
@@ -6,12 +6,14 @@ import { CharacterList } from '../src/components/character-list/character-list';
 import { Layout } from '../src/components/Layout/Layout';
 import { SearchCharacter } from '../src/components/search/search';
 import { DEFAULT_FILTERS } from '../src/constants/filters';
+import { API_CHARACTERS } from '../src/constants/url';
+import queryString from 'query-string';
 
 const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
 
-  const [Filters, setFilters] = useState(DEFAULT_FILTERS);
+  const [filters, setFilters] = useState(DEFAULT_FILTERS);
 
   return (
     <>
@@ -21,11 +23,11 @@ export default function Home() {
       <Layout>
         <NavBar />
         <SearchCharacter
-          filters={ Filters }
+          filters={ filters }
           setFilters={ setFilters }
         />
         <CharacterList 
-          filter={ Filters }
+          filters={ filters }
         />
       </Layout>
     </>

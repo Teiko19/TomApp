@@ -1,23 +1,16 @@
-import React from "react";
+import React, { useEffect } from "react";
 
 export const SearchCharacter = ({ filters, setFilters }) => {
 
-  const handleStatus = event => {
-    filters.status = event.target.value
-    console.log(filters)
-    return setFilters(filters)
-  };
-  const handleGender = event => {
-    filters.gender = event.target.value
-    console.log(filters)
-    return setFilters(filters)
+  const handleEvent = (key, event) => {
+    return setFilters(...filters, key = event.target.value );
   };
 
   return (
     <div className="d-flex justify-content-around">
       <div className="input-group px-5 mb-2">
-        <label className="input-group-text">Options</label>
-        <select className="form-select" value={filters.status} onChange={handleStatus}>
+        <label className="input-group-text">Status</label>
+        <select className="form-select" onChange={(event => { handleEvent("status", event) })}>
           <option value="" selected className="text-center">Select status</option>
           <option value="alive" className="text-center">Alive</option>
           <option value="dead" className="text-center">Dead</option>
@@ -25,8 +18,8 @@ export const SearchCharacter = ({ filters, setFilters }) => {
         </select>
       </div>
       <div className="input-group px-5 mb-2">
-        <label className="input-group-text">Options</label>
-        <select className="form-select" value={filters.gender} onChange={handleGender}>
+        <label className="input-group-text">Gender</label>
+        <select className="form-select" onChange={(event => { handleEvent("gender", event) })}>
           <option value="" selected className="text-center">Select gender</option>
           <option value="female" className="text-center">Female</option>
           <option value="male" className="text-center">Male</option>
