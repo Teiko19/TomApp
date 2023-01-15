@@ -1,5 +1,4 @@
 import React from 'react'
-import { SearchCharacter } from '../search/search'
 
 export const NavBar = () => {
   return (
