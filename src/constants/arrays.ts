@@ -5,6 +5,6 @@ export interface Date {
 }
 
 export const ARR = [
-  { handler: "status" , select: "Select Status" , arrInt: ["Alive","Dead","Unknown"] } , 
-  { handler: "gender" , select: "Select Gender" , arrInt: ["Male","Female","Genderless","Unknown"]}
+  { name: "status" , select: "Select Status" , arrInt: ["Alive","Dead","Unknown"] } , 
+  { name: "gender" , select: "Select Gender" , arrInt: ["Male","Female","Genderless","Unknown"]}
 ]
