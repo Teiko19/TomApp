@@ -4,7 +4,5 @@ export interface Date {
   arrInt: []
 }
 
-export const ARR = [
-  { name: "status" , select: "Select Status" , arrInt: ["Alive","Dead","Unknown"] } , 
-  { name: "gender" , select: "Select Gender" , arrInt: ["Male","Female","Genderless","Unknown"]}
-]
+export const ARR_STATUS = ["Alive","Dead","Unknown"]
+export const ARR_GENDER = ["Male","Female","Genderless","Unknown"]
