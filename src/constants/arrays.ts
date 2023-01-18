@@ -1,2 +1,2 @@
-export const ARR_STATUS = ["Alive","Dead","Unknown"];
-export const ARR_GENDER = ["Male","Female","Genderless","Unknown"];
+export const ARR_STATUS = ["All Status","Alive","Dead","Unknown"];
+export const ARR_GENDER = ["All Genders","Male","Female","Genderless","Unknown"];
