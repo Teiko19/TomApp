@@ -6,8 +6,6 @@ import { CharacterList } from '../src/components/character-list/character-list';
 import { Layout } from '../src/components/Layout/Layout';
 import { SearchCharacter } from '../src/components/search/search';
 import { DEFAULT_FILTERS } from '../src/constants/filters';
-import { API_CHARACTERS } from '../src/constants/url';
-import queryString from 'query-string';
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -32,4 +30,4 @@ export default function Home() {
       </Layout>
     </>
   )
-}
+};

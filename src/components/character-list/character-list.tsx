@@ -19,7 +19,7 @@ export const CharacterList = ({ filters }) => {
 
   return (
       <div className="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
-        {  characters.map((x) => <Character character={x} key={`character-${x.id}`}/>) }
+        { characters.map((x) => <Character character={x} key={`character-${x.id}`}/>) }
       </div>
   )
 

@@ -1,8 +1,2 @@
-export interface Date {
-  handler: string,
-  select: string,
-  arrInt: []
-}
-
-export const ARR_STATUS = ["Alive","Dead","Unknown"]
-export const ARR_GENDER = ["Male","Female","Genderless","Unknown"]
+export const ARR_STATUS = ["Alive","Dead","Unknown"];
+export const ARR_GENDER = ["Male","Female","Genderless","Unknown"];
