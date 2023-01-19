@@ -2,7 +2,8 @@ import React from 'react'
 
 export const NavBar = () => {
   return (
-      <nav className="d-flex align-items-center justify-content-around">
+    <div className="mb-3">
+      <nav className="d-flex align-items-center justify-content-around mb-3">
         <div>
           <a className="navbar-brand" href="#">Home</a>
         </div>
@@ -21,5 +22,6 @@ export const NavBar = () => {
           </ul>
         </div>
       </nav>
+    </div>
   )
 };
