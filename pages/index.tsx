@@ -1,22 +1,33 @@
-import React from 'react'
-import Head from 'next/head'
-import { NavBar } from '../src/components/navBar/navBar'
-import { Inter } from '@next/font/google'
-import { CharacterList } from '../src/components/character-list/character-list'
-import { Main } from '../src/components/main/main'
+import React, { useEffect, useState } from 'react';
+import Head from 'next/head';
+import { NavBar } from '../src/components/navBar/navBar';
+import { Inter } from '@next/font/google';
+import { CharacterList } from '../src/components/character-list/character-list';
+import { Layout } from '../src/components/Layout/Layout';
+import { SearchCharacter } from '../src/components/search/search';
+import { DEFAULT_FILTERS } from '../src/constants/filters';
 
 const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
+
+  const [filters, setFilters] = useState(DEFAULT_FILTERS);
+
   return (
     <>
       <Head>
         <title>TomApp</title>
       </Head>
-      <Main className="mx-3 mt-3">
+      <Layout>
         <NavBar />
-        <CharacterList />
-      </Main>
-    </> 
+        <SearchCharacter
+          filters={ filters }
+          setFilters={ setFilters }
+        />
+        <CharacterList 
+          filters={ filters }
+        />
+      </Layout>
+    </>
   )
-}
+};
